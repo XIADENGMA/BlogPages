@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on MyBlog</title>
-    <link>http://localhost:1313/authors/</link>
+    <link>https://blog.xiadengma.com/authors/</link>
     <description>Recent content in Authors on MyBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 XIADENGMA | All rights reserved | [浙ICP备20005376号-2](https://beian.miit.gov.cn)</copyright>
-    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.xiadengma.com/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

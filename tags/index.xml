@@ -2,78 +2,78 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on MyBlog</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://blog.xiadengma.com/tags/</link>
     <description>Recent content in Tags on MyBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 XIADENGMA | All rights reserved | [浙ICP备20005376号-2](https://beian.miit.gov.cn)</copyright>
-    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.xiadengma.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Archlinux</title>
-      <link>http://localhost:1313/tags/archlinux/</link>
+      <link>https://blog.xiadengma.com/tags/archlinux/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/archlinux/</guid>
+      <guid>https://blog.xiadengma.com/tags/archlinux/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>C&#43;&#43;</title>
-      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+      <link>https://blog.xiadengma.com/tags/c&#43;&#43;/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
+      <guid>https://blog.xiadengma.com/tags/c&#43;&#43;/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Clangd</title>
-      <link>http://localhost:1313/tags/clangd/</link>
+      <link>https://blog.xiadengma.com/tags/clangd/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/clangd/</guid>
+      <guid>https://blog.xiadengma.com/tags/clangd/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Code</title>
-      <link>http://localhost:1313/tags/code/</link>
+      <link>https://blog.xiadengma.com/tags/code/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/code/</guid>
+      <guid>https://blog.xiadengma.com/tags/code/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Lldb</title>
-      <link>http://localhost:1313/tags/lldb/</link>
+      <link>https://blog.xiadengma.com/tags/lldb/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/lldb/</guid>
+      <guid>https://blog.xiadengma.com/tags/lldb/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Vscode</title>
-      <link>http://localhost:1313/tags/vscode/</link>
+      <link>https://blog.xiadengma.com/tags/vscode/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/vscode/</guid>
+      <guid>https://blog.xiadengma.com/tags/vscode/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Xmake</title>
-      <link>http://localhost:1313/tags/xmake/</link>
+      <link>https://blog.xiadengma.com/tags/xmake/</link>
       <pubDate>Tue, 12 Nov 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/xmake/</guid>
+      <guid>https://blog.xiadengma.com/tags/xmake/</guid>
       <description></description>
       
     </item>
