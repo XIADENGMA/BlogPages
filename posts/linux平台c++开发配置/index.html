@@ -117,7 +117,7 @@
     "keywords": ["archlinux","vscode","c++","clangd","xmake","lldb","code"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1827"
+    "wordCount": "1819"
   }]
   </script>
 
@@ -642,7 +642,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-11-12T00:00:00&#43;00:00">2024年11月12日</time><span class="px-2 text-primary-500">&middot;</span><span>1827 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">9 分钟</span>
+  <time datetime="2024-11-12T00:00:00&#43;00:00">2024年11月12日</time><span class="px-2 text-primary-500">&middot;</span><span>1819 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">9 分钟</span>
   
 
   
@@ -1017,20 +1017,7 @@
     
 </h3>
 <p>进入<code>vscode</code>，先点击<code>左上角文件-&gt;首选项-&gt;Profile-&gt;默认</code>，再按快捷键<code>Ctrl+Shift+P</code>，在输入框内输入<code>user json</code>，选中<code>Preferences: Open Settings (JSON)</code>,此时会有一个<code>settings.json</code>文件被打开，修改其内容为下面内容</p>
-<div class="expand-wrapper prose dark:prose-invert max-w-prose zen-mode-content">
-    <input id="expand-1" class="expand-toggle" type="checkbox" >
-    <label for="expand-1" class="expand-title">
-        <span class="expand-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-chevron-down">
-                <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-        </span>点击展开查看配置文件
-    </label>
-    <div class="expand-content">
-        <div class="expand-inner">
-            <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">//------------------下列配置共享给所有其他配置------------------
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;workbench.settings.applyToAllProfiles&#34;</span><span class="p">:</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">        <span class="c1">//---工作台---
@@ -1412,12 +1399,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="err">}</span>
-</span></span></code></pre></div>
-        </div>
-    </div>
-</div>
-
-<p>在复制粘贴完上面内容后，主要需要修改以下自定义配置（主要是字体和插件API）：</p>
+</span></span></code></pre></div><p>在复制粘贴完上面内容后，主要需要修改以下自定义配置（主要是字体和插件API）：</p>
 <ol>
 <li><code>editor.codeLensFontFamily</code>：CodeLens（提示）字体</li>
 <li><code>editor.fontFamily</code>：字体</li>
@@ -1442,20 +1424,7 @@
     
 </h3>
 <p>按快捷键<code>Ctrl+Shift+P</code>，在输入框内输入<code>keyboard json</code>，选中<code>Preferences: Open Keyboard Shortcuts (JSON)</code>,此时会有一个<code>keybindings.json</code>文件被打开，修改其内容为下面内容</p>
-<div class="expand-wrapper prose dark:prose-invert max-w-prose zen-mode-content">
-    <input id="expand-2" class="expand-toggle" type="checkbox" >
-    <label for="expand-2" class="expand-title">
-        <span class="expand-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-chevron-down">
-                <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-        </span>点击展开查看配置文件
-    </label>
-    <div class="expand-content">
-        <div class="expand-inner">
-            <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">[</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">[</span>
 </span></span><span class="line"><span class="cl">    <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="c1">//终端复制
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nt">&#34;key&#34;</span><span class="p">:</span> <span class="s2">&#34;ctrl+c&#34;</span><span class="p">,</span>
@@ -1480,11 +1449,6 @@
 </span></span><span class="line"><span class="cl">    <span class="p">},</span>
 </span></span><span class="line"><span class="cl"><span class="p">]</span>
 </span></span></code></pre></div>
-        </div>
-    </div>
-</div>
-
-
 
 <h2 class="relative group">3. vscode C++开发配置和插件 
     <div id="3-vscode-c%E5%BC%80%E5%8F%91%E9%85%8D%E7%BD%AE%E5%92%8C%E6%8F%92%E4%BB%B6" class="anchor"></div>
@@ -1533,20 +1497,7 @@
     
 </h3>
 <p>和之前一样，按快捷键<code>Ctrl+Shift+P</code>，在输入框内输入<code>user json</code>，选中<code>Preferences: Open Settings (JSON)</code>,此时会有一个新的<code>settings.json</code>文件被打开，修改其内容为下面内容</p>
-<div class="expand-wrapper prose dark:prose-invert max-w-prose zen-mode-content">
-    <input id="expand-3" class="expand-toggle" type="checkbox" >
-    <label for="expand-3" class="expand-title">
-        <span class="expand-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-chevron-down">
-                <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-        </span>点击展开查看配置文件
-    </label>
-    <div class="expand-content">
-        <div class="expand-inner">
-            <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">//----------------xmake设置-----------------
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;xmake.debugConfigType&#34;</span><span class="p">:</span> <span class="s2">&#34;codelldb&#34;</span><span class="p">,</span> <span class="c1">//使用codelldb插件调试
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;xmake.runMode&#34;</span><span class="p">:</span> <span class="s2">&#34;buildRun&#34;</span><span class="p">,</span> <span class="c1">//运行前自动构建
@@ -1652,12 +1603,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;lldb.showDisassembly&#34;</span><span class="p">:</span> <span class="s2">&#34;never&#34;</span><span class="p">,</span> <span class="c1">// LLDB 不显示汇编代码
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;lldb.verboseLogging&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// LLDB 输出详细日志
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
-</span></span></code></pre></div>
-        </div>
-    </div>
-</div>
-
-<p>在复制粘贴完上面内容后，可能需要修改以下自定义配置：</p>
+</span></span></code></pre></div><p>在复制粘贴完上面内容后，可能需要修改以下自定义配置：</p>
 <ol>
 <li><code>clangd.path</code>：指定<code>clangd</code>的路径，根据自己的<code>clangd</code>安装路径进行修改</li>
 <li><code>clang-format.executable</code>：指定<code>clang-format</code>的路径，根据自己的<code>clang-format</code>安装路径进行修改</li>
@@ -1684,22 +1630,9 @@
 </span></span><span class="line"><span class="cl">├── project1
 </span></span><span class="line"><span class="cl">├── project2
 </span></span></code></pre></div><ol>
-<li><code>.clang-format</code>：具体配置可以参考<a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html" target="_blank">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></li>
-</ol>
-<div class="expand-wrapper prose dark:prose-invert max-w-prose zen-mode-content">
-    <input id="expand-4" class="expand-toggle" type="checkbox" >
-    <label for="expand-4" class="expand-title">
-        <span class="expand-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-chevron-down">
-                <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-        </span>点击展开查看配置文件
-    </label>
-    <div class="expand-content">
-        <div class="expand-inner">
-            <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># 语言: None, Cpp, Java, JavaScript, ObjC, Proto, TableGen, TextProto</span><span class="w">
+<li>
+<p><code>.clang-format</code>：具体配置可以参考<a href="https://clang.llvm.org/docs/ClangFormatStyleOptions.html" target="_blank">https://clang.llvm.org/docs/ClangFormatStyleOptions.html</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># 语言: None, Cpp, Java, JavaScript, ObjC, Proto, TableGen, TextProto</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Language</span><span class="p">:</span><span class="w">   </span><span class="l">Cpp</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># BasedOnStyle: LLVM</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 访问说明符(public、private等)的偏移</span><span class="w">
@@ -1743,28 +1676,28 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">BinPackParameters</span><span class="p">:</span><span class="w">  </span><span class="kc">true</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 大括号换行，只有当BreakBeforeBraces设置为Custom时才有效</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">BraceWrapping</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># class定义后面</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">AfterClass</span><span class="p">:</span><span class="w">   </span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># 控制语句后面</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">AfterControlStatement</span><span class="p">:</span><span class="w">    </span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># enum定义后面</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">AfterEnum</span><span class="p">:</span><span class="w">    </span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># 函数定义后面</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">AfterFunction</span><span class="p">:</span><span class="w">    </span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># 命名空间定义后面</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">AfterNamespace</span><span class="p">:</span><span class="w">   </span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># ObjC定义后面</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">AfterObjCDeclaration</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># struct定义后面</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">AfterStruct</span><span class="p">:</span><span class="w">  </span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># union定义后面</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">AfterUnion</span><span class="p">:</span><span class="w">   </span><span class="kc">false</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># catch之前</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">BeforeCatch</span><span class="p">:</span><span class="w">  </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># else之前</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">BeforeElse</span><span class="p">:</span><span class="w">   </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># 缩进大括号</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">IndentBraces</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># class定义后面</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AfterClass</span><span class="p">:</span><span class="w">   </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 控制语句后面</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AfterControlStatement</span><span class="p">:</span><span class="w">    </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># enum定义后面</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AfterEnum</span><span class="p">:</span><span class="w">    </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 函数定义后面</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AfterFunction</span><span class="p">:</span><span class="w">    </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 命名空间定义后面</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AfterNamespace</span><span class="p">:</span><span class="w">   </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># ObjC定义后面</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AfterObjCDeclaration</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># struct定义后面</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AfterStruct</span><span class="p">:</span><span class="w">  </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># union定义后面</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">AfterUnion</span><span class="p">:</span><span class="w">   </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># catch之前</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">BeforeCatch</span><span class="p">:</span><span class="w">  </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># else之前</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">BeforeElse</span><span class="p">:</span><span class="w">   </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 缩进大括号</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">IndentBraces</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 在二元运算符前换行: None(在操作符后换行), NonAssignment(在非赋值的操作符前换行), All(在操作符前换行)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">BreakBeforeBinaryOperators</span><span class="p">:</span><span class="w"> </span><span class="l">NonAssignment</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 在大括号前换行: Attach(始终将大括号附加到周围的上下文), Linux(除函数、命名空间和类定义，与Attach类似),</span><span class="w">
@@ -1801,11 +1734,11 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">#   匹配不到的则默认优先级为INT_MAX(优先级越小排序越靠前)，</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">#   可以定义负数优先级从而保证某些#include永远在最前面</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">IncludeCategories</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">Regex</span><span class="p">:</span><span class="w">  </span><span class="s1">&#39;^&#34;(llvm|llvm-c|clang|clang-c)/&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">Regex</span><span class="p">:</span><span class="w">  </span><span class="s1">&#39;^&#34;(llvm|llvm-c|clang|clang-c)/&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Priority</span><span class="p">:</span><span class="w">   </span><span class="m">2</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">Regex</span><span class="p">:</span><span class="w">  </span><span class="s1">&#39;^(&lt;|&#34;(gtest|isl|json)/)&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">Regex</span><span class="p">:</span><span class="w">  </span><span class="s1">&#39;^(&lt;|&#34;(gtest|isl|json)/)&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Priority</span><span class="p">:</span><span class="w">   </span><span class="m">3</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">Regex</span><span class="p">:</span><span class="w">  </span><span class="s1">&#39;.*&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">Regex</span><span class="p">:</span><span class="w">  </span><span class="s1">&#39;.*&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Priority</span><span class="p">:</span><span class="w">   </span><span class="m">1</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 缩进case标签</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">IndentCaseLabels</span><span class="p">:</span><span class="w">   </span><span class="kc">false</span><span class="w">
@@ -1873,32 +1806,14 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">TabWidth</span><span class="p">:</span><span class="w">   </span><span class="m">4</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 使用tab字符: Never, ForIndentation, ForContinuationAndIndentation, Always</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">UseTab</span><span class="p">:</span><span class="w"> </span><span class="l">Never</span><span class="w">
-</span></span></span></code></pre></div>
-        </div>
-    </div>
-</div>
-
-<ol start="2">
-<li><code>.clangd</code>：具体配置可以参考<a href="https://clang.llvm.org/extra/clang-tidy/" target="_blank">https://clang.llvm.org/extra/clang-tidy/</a></li>
-</ol>
-<div class="expand-wrapper prose dark:prose-invert max-w-prose zen-mode-content">
-    <input id="expand-5" class="expand-toggle" type="checkbox" >
-    <label for="expand-5" class="expand-title">
-        <span class="expand-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-chevron-down">
-                <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-        </span>点击展开查看配置文件
-    </label>
-    <div class="expand-content">
-        <div class="expand-inner">
-            <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">Index</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">Background</span><span class="p">:</span><span class="w"> </span><span class="l">Build</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>
+<p><code>.clangd</code>：具体配置可以参考<a href="https://clang.llvm.org/extra/clang-tidy/" target="_blank">https://clang.llvm.org/extra/clang-tidy/</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">Index</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Background</span><span class="p">:</span><span class="w"> </span><span class="l">Build</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">Diagnostics</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ClangTidy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">ClangTidy</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Add</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;*&#34;</span><span class="p">]</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Remove</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="l">abseil*,</span><span class="w">
@@ -1915,12 +1830,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="l">cppcoreguidelines-avoid-magic-numbers,</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="l">readability-magic-numbers,</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="l">bugprone-easily-swappable-parameters,</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="p">]</span><span class="w">
-</span></span></span></code></pre></div>
-        </div>
-    </div>
-</div>
-
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">]</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ol>
 
 
 <h2 class="relative group">5. 项目使用测试 
@@ -1933,25 +1845,12 @@
     </span>        
     
 </h2>
-<p>这里直接给出测试文件（C++的基础上测试opencv库、fmt库、eigen库使用，去过不需要请手动去除对应部分）</p>
+<p>这里直接给出测试文件（C++的基础上测试opencv库、fmt库、eigen库使用，如果不需要，请手动去除对应部分）</p>
 <p>先新建项目文件夹，然后在项目文件夹下，依次保存下面文件：</p>
 <ol>
 <li>
-<p><code>xmake.lua</code>
-<div class="expand-wrapper prose dark:prose-invert max-w-prose zen-mode-content">
-    <input id="expand-6" class="expand-toggle" type="checkbox" >
-    <label for="expand-6" class="expand-title">
-        <span class="expand-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-chevron-down">
-                <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-        </span>点击展开查看配置文件
-    </label>
-    <div class="expand-content">
-        <div class="expand-inner">
-            <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">add_rules</span><span class="p">(</span><span class="s2">&#34;mode.debug&#34;</span><span class="p">,</span> <span class="s2">&#34;mode.release&#34;</span><span class="p">)</span>
+<p><code>xmake.lua</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-lua" data-lang="lua"><span class="line"><span class="cl"><span class="n">add_rules</span><span class="p">(</span><span class="s2">&#34;mode.debug&#34;</span><span class="p">,</span> <span class="s2">&#34;mode.release&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">set_toolchains</span><span class="p">(</span><span class="s2">&#34;clang&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">set_languages</span><span class="p">(</span><span class="s2">&#34;c99&#34;</span><span class="p">,</span> <span class="s2">&#34;c++20&#34;</span><span class="p">)</span>
@@ -1968,28 +1867,10 @@
 </span></span><span class="line"><span class="cl">    <span class="n">add_packages</span><span class="p">(</span><span class="s2">&#34;opencv&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">add_packages</span><span class="p">(</span><span class="s2">&#34;fmt&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">add_packages</span><span class="p">(</span><span class="s2">&#34;eigen&#34;</span><span class="p">)</span>
-</span></span></code></pre></div>
-        </div>
-    </div>
-</div>
-</p>
-</li>
+</span></span></code></pre></div></li>
 <li>
-<p><code>src</code>文件夹内<code>main.cpp</code>
-<div class="expand-wrapper prose dark:prose-invert max-w-prose zen-mode-content">
-    <input id="expand-7" class="expand-toggle" type="checkbox" >
-    <label for="expand-7" class="expand-title">
-        <span class="expand-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-chevron-down">
-                <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-        </span>点击展开查看代码文件
-    </label>
-    <div class="expand-content">
-        <div class="expand-inner">
-            <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Eigen/Dense&gt;</span><span class="cp">
+<p><code>src</code>文件夹内<code>main.cpp</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Eigen/Dense&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;fmt/format.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;opencv2/opencv.hpp&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
@@ -2013,12 +1894,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div>
-        </div>
-    </div>
-</div>
-</p>
-</li>
+</span></span></code></pre></div></li>
 </ol>
 <p>然后在项目文件夹下新建<code>data</code>文件夹，放入一张名为<code>1.jpg</code>的图片</p>
 
@@ -2075,27 +1951,9 @@
     </span>        
     
 </h2>
-<div class="expand-wrapper prose dark:prose-invert max-w-prose zen-mode-content">
-    <input id="expand-8" class="expand-toggle" type="checkbox" >
-    <label for="expand-8" class="expand-title">
-        <span class="expand-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="feather feather-chevron-down">
-                <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-        </span>点击展开查看参考资料
-    </label>
-    <div class="expand-content">
-        <div class="expand-inner">
-            <ul>
+<ul>
 <li><a href="https://www.cnblogs.com/guoxuanhan/p/17864923.html" target="_blank">https://www.cnblogs.com/guoxuanhan/p/17864923.html</a></li>
 </ul>
-
-        </div>
-    </div>
-</div>
-
 
           
           
