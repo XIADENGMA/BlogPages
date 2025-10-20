@@ -1,0 +1,88 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 1. 定义新的径向渐变背景 -->
+    <radialGradient id="backgroundGradient" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#2a204a" /> <!-- 中心颜色：明亮的紫蓝色 -->
+      <stop offset="100%" stop-color="#0a0f1e" /> <!-- 边缘颜色：原始的深蓝色 -->
+    </radialGradient>
+
+    <!-- 多彩流动渐变 (带动画) -->
+    <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A00E0" />
+      <stop offset="50%" stop-color="#8E2DE2" />
+      <stop offset="100%" stop-color="#2193b0" />
+      <animate attributeName="x1" values="0%;100%;0%" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="x2" values="100%;200%;100%" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="y1" values="0%;100%;0%" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="100%;0%;100%" dur="10s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <!-- 霓虹辉光滤镜 -->
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur1" />
+      <feGaussianBlur in="SourceGraphic" stdDeviation="30" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- 网格图案 -->
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#2c3a5e" stroke-width="0.75"/> <!-- 网格颜色也相应提亮 -->
+    </pattern>
+  </defs>
+
+  <!-- 2. 应用新的渐变背景 -->
+  <rect width="100%" height="100%" fill="url(#backgroundGradient)" />
+
+  <!-- 背景网格层 -->
+  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.2"/>
+
+  <!-- 增强的星尘粒子层 (分层 + 动画) -->
+  <g fill="#7DF9FF">
+    <!-- 远景星尘 -->
+    <g id="stars-far" opacity="0.4">
+        <circle cx="250" cy="150" r="1.5"><animate attributeName="r" values="1.5;2;1.5" dur="5s" repeatCount="indefinite" /></circle>
+        <circle cx="1800" cy="120" r="1" />
+        <circle cx="800" cy="950" r="1.5" />
+        <circle cx="100" cy="1000" r="1.2" />
+        <circle cx="1650" cy="900" r="1.5" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="7s" repeatCount="indefinite" /></circle>
+    </g>
+    <!-- 中景星尘 -->
+    <g id="stars-mid" opacity="0.7">
+        <circle cx="1500" cy="500" r="2.5"><animate attributeName="r" values="2.5;3.5;2.5" dur="4s" repeatCount="indefinite" /><animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite" /></circle>
+        <circle cx="1250" cy="200" r="2" opacity="0.8"/>
+        <circle cx="550" cy="600" r="2" />
+        <circle cx="400" cy="800" r="2.2"><animate attributeName="cx" values="400;410;400" dur="10s" repeatCount="indefinite" /></circle>
+    </g>
+    <!-- 近景星尘 -->
+    <g id="stars-near" opacity="0.9">
+        <circle cx="100" cy="300" r="3.5" filter="url(#neonGlow) feGaussianBlur[stdDeviation='1']" />
+        <circle cx="1400" cy="850" r="3" />
+        <circle cx="950" cy="150" r="4"><animate attributeName="r" values="4;3;4" dur="3s" repeatCount="indefinite" /></circle>
+    </g>
+  </g>
+
+  <!-- 应用了辉光滤镜的流动线条 -->
+  <g filter="url(#neonGlow)" opacity="0.8">
+    <!-- 辅助细线条 -->
+    <path d="M -100,250 C 400,150 600,850 1000,650 S 1600,250 2020,450" stroke="url(#flowGradient)" stroke-width="4" stroke-opacity="0.5"/>
+    <path d="M -100,750 C 300,950 800,450 1200,650 S 1700,950 2020,850" stroke="url(#flowGradient)" stroke-width="6" stroke-opacity="0.6"/>
+    <!-- 原始粗线条 -->
+    <g stroke-width="120" stroke-linecap="round" fill="none">
+      <path d="M -100,200 C 400,100 600,800 1000,600 S 1600,200 2020,400" stroke="url(#flowGradient)" />
+      <path d="M -100,800 C 300,1000 800,500 1200,700 S 1700,1000 2020,900" stroke="url(#flowGradient)" />
+    </g>
+  </g>
+
+  <!-- === 新增的播放按钮组件 === -->
+  <g id="playButton" transform="translate(960, 540)" style="cursor: pointer;">
+    <!-- 外圈: 半透明背景，带白色描边，增加层次感 -->
+    <circle cx="0" cy="0" r="90" fill="white" fill-opacity="0.15" stroke="white" stroke-width="2.5"/>
+    <!-- 播放三角符号: 实心白色，清晰醒目 -->
+    <polygon points="35,0 -25,-35 -25,35" fill="white"/>
+  </g>
+
+</svg>
